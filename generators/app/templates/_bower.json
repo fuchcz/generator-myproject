@@ -1,0 +1,46 @@
+{
+  "name": "<%= name %>",
+  "authors": [
+    "<%= author.name %> <<%= author.email %>>"
+  ],
+  "description": "<%= description %>",
+  "main": "",
+  "moduleType": [],
+  "license": <% if (license == 'proprietary') { %>"LICENSE IN license.md"<% } else if (license == 'mit') { %>"MIT"<% } %>,
+  "homepage": "<%= homepage %>",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/js/jquery.min.js"
+      ]
+    }<% if (bowercomponents.indexOf('bootstrap') !== -1) { %>,
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    }<% } %><% if (bowercomponents.indexOf('adminlte') !== -1) { %>,
+    "AdminLTE": {
+      "main": [
+        "dist/css/AdminLTE.min.css",
+        "dist/css/skins/skin-red.min.css",
+        "dist/js/app.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+      "css/font-awesome.min.css"
+      ]
+    }<% } %>
+  }
+}

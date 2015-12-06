@@ -1,0 +1,14 @@
+.prep/
+.idea/
+
+private/app/config/config.local.neon
+private/log/*
+private/temp/*
+private/vendor/*
+!.gitignore
+!.htaccess
+!web.config
+
+web/bower_components/*
+web/images/*
+node_modules/*

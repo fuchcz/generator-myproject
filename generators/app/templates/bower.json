@@ -1,0 +1,46 @@
+{
+  "name": "pixeledge/shop",
+  "authors": [
+    "Miroslav Pokorný <me@miroslavpokorny.com>"
+  ],
+  "description": "PixelEdge e-commerce solution.",
+  "main": "",
+  "moduleType": [],
+  "license": "proprietary",
+  "homepage": "http://pixeledge.cz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "AdminLTE": "admin-lte#~2.3.2",
+    "font-awesome": "fontawesome#~4.4.0",
+    "Ionicons": "ionicons#~2.0.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "AdminLTE": {
+      "main": [
+        "dist/css/AdminLTE.min.css",
+        "dist/css/skins/skin-red.min.css",
+        "dist/js/app.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
+  }
+}

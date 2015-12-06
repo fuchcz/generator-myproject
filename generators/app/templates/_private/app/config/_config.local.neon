@@ -1,0 +1,13 @@
+parameters:
+
+
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=<%= database %>'
+	user: '<%= username %>'
+	password: '<%= password %>'
+	options:
+		lazy: yes
+
+services:
+	cacheStorage:
+		class: Nette\Caching\Storages\DevNullStorage

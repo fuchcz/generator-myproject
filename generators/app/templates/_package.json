@@ -1,0 +1,23 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "repository": {
+    "type" : "git",
+    "url" : "<%= repository %>"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "<%= author.name %>",
+    "email": "<%= author.email %>"<% if (author.url) { %>,
+    "url": "<%= author.url %>"<% } %>
+  },
+  "license": <% if (license == 'proprietary') { %>"LICENSE IN license.md"<% } else if (license == 'mit') { %>"MIT"<% } %>,
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-wiredep": "*"
+  }
+}
