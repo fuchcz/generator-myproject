@@ -4,7 +4,8 @@
   "description": "Yeoman generator for my Nette projects.",
   "dependencies": {
     "yeoman-generator": "^0.21.0",
-    "yosay": "^1.1.0"
+    "yosay": "^1.1.0",
+    "slugg": "^0.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
