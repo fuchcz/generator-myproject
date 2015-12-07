@@ -194,6 +194,10 @@ module.exports = yeoman.generators.Base.extend({
         for (var i = 0, len = components.length; i < len; i++) {
             this.spawnCommandSync('bower', ['install', components[i], '--save']);
         }
+        if (this.props.bowercomponents.indexOf('adminlte') !== -1) {
+            this.spawnCommandSync('bower', ['install', 'fontawesome', '--save']);
+            this.spawnCommandSync('bower', ['install', 'ionicons', '--save']);
+        }
     },
     end: function() {
         this.log('\n' + chalk.yellow('DON\'T FORGET TO RUN ') + chalk.red('npm update --save-dev') + chalk.yellow(' !!!'));
