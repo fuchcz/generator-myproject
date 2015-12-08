@@ -10,16 +10,14 @@ module.exports = function(grunt) {
                 options: {
                     exclude: [
                         '/AdminLTE/'
-                    ]
+                    ],
+                    ignorePath: '../../../../../web'
                 }
             },
             admin: {
                 src: [
                     'private/app/modules/Admin/**/@layout.latte'
                 ]
-            },
-            options: {
-                ignorePath: '../../../../../web'
             }
         },
         watch: {
